@@ -11,3 +11,6 @@ npm init react-app my-app
 OR 
 
 npx create-react-app demo
+
+cd app-name
+npm start
