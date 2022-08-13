@@ -7,3 +7,7 @@ npm install -g create-react-app
 npm i create-react-app
 npm i nx
 npm init react-app my-app
+
+OR 
+
+npx create-react-app demo
