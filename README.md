@@ -17,6 +17,9 @@ npm start
 
 The term “render prop” refers to a technique for sharing code between React components using a prop whose value is a function. A component with a render prop takes a function that returns a React element and calls it instead of implementing its own render logic.
 
+Props are used to pass data, whereas state is for managing data.
+
 The three phases are: Mounting, Updating, and Unmounting.
 
 React elements are immutable. Once you create an element, you can’t change its children or attributes. An element is like a single frame in a movie: it represents the UI at a certain point in time.
+
