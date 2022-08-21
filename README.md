@@ -23,3 +23,8 @@ The three phases are: Mounting, Updating, and Unmounting.
 
 React elements are immutable. Once you create an element, you can’t change its children or attributes. An element is like a single frame in a movie: it represents the UI at a certain point in time.
 
+super() is used to call the parent constructor.
+
+super(props) would pass props to the parent constructor.
+
+From your example, super(props) would call the React.Component constructor passing in props as the argument.
