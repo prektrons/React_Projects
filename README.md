@@ -35,3 +35,5 @@ From your example, super(props) would call the React.Component constructor passi
 React Hooks are functions that add state variables to functional components and instrument the lifecycle methods of classes.
 
 With React Hooks, we can use state, and other React features, in a functional component. It empowers devs to do functional programming in React.
+
+React Hooks are simple JavaScript functions that we can use to isolate the reusable part from a functional component. Hooks can be stateful and can manage side-effects.
