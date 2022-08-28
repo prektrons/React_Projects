@@ -1,34 +1,32 @@
-import React, { useState } from 'react';
-import './App.css';
+import React, { Component } from "react";
 
-function App() {
-  const [submitting, setSubmitting] = useState(false);
-  const handleSubmit = event => {
-    event.preventDefault();
-   setSubmitting(true);
+import "./App.css";
+import Form from "./Form";
 
-   setTimeout(() => {
-     setSubmitting(false);
-   }, 3000)
- }
+class App extends Component {
+  state = {
+    fields: {}
+  };
 
-  return(
-    <div className="wrapper">
-      <h1>How About Them Apples</h1>
-      {submitting &&
-       <div>Submtting Form...</div>
-     }
-      <form onSubmit={handleSubmit}>
-        <fieldset>
-          <label>
-            <p>Name</p>
-            <input name="name" />
-          </label>
-        </fieldset>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  )
+  onChange = updatedValue => {
+    this.setState({
+      fields: {
+        ...this.state.fields,
+        ...updatedValue
+      }
+    });
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <Form onChange={fields => this.onChange(fields)} />
+        <p>
+          {JSON.stringify(this.state.fields, null, 2)}
+        </p>
+      </div>
+    );
+  }
 }
 
 export default App;
