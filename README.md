@@ -28,3 +28,6 @@ super() is used to call the parent constructor.
 super(props) would pass props to the parent constructor.
 
 From your example, super(props) would call the React.Component constructor passing in props as the argument.
+
+
+React Hooks are functions that add state variables to functional components and instrument the lifecycle methods of classes.
