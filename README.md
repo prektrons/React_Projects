@@ -15,6 +15,8 @@ npx create-react-app demo
 cd app-name
 npm start
 
+React follows the principle of component-based architecture. A component in React is an isolated and reusable piece of code. The components can be of two types – class components and functional components.
+
 The term “render prop” refers to a technique for sharing code between React components using a prop whose value is a function. A component with a render prop takes a function that returns a React element and calls it instead of implementing its own render logic.
 
 Props are used to pass data, whereas state is for managing data.
@@ -31,3 +33,5 @@ From your example, super(props) would call the React.Component constructor passi
 
 
 React Hooks are functions that add state variables to functional components and instrument the lifecycle methods of classes.
+
+With React Hooks, we can use state, and other React features, in a functional component. It empowers devs to do functional programming in React.
