@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -12,7 +11,10 @@ code {
     monospace;
 }
 
+main > :first-child {
+  margin-top: 0;
+}
 
-.wrapper {
-  padding: 20px;
+main > :last-child {
+  margin-bottom: 0;
 }
